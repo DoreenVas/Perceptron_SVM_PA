@@ -12,10 +12,15 @@ train y.txt- training labels
 
 test x.txt - testing examples
 
-
-
-***Update rules for all models:***
-
-
-
-![](https://github.com/DoreenVas/Perceptron_SVM_PA/blob/master/models.png)
+<table>
+<thead>
+<tr>
+<th>Update rules for all models:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://github.com/DoreenVas/Perceptron_SVM_PA/blob/master/models.png"/></td>
+</tr>
+</tbody>
+</table>
