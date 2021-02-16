@@ -12,10 +12,11 @@ train y.txt- training labels
 
 test x.txt - testing examples
 
+
 <table>
 <thead>
 <tr>
-<th>Update rules for all models:</th>
+<th>Update rules for all models</th>
 </tr>
 </thead>
 <tbody>
