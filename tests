@@ -1,0 +1,74 @@
+starts at:
+epochs = 5
+eta = 0.01
+lamda = 0.01
+
+seed(1/2)
+shuffle(zip_files)
+loops: 10,10,10
+eta = eta + 0.05
+lamda = lamda + 0.05
+epochs = epochs + 5
+
+
+***********z_score_norm_data**************
+perceptron: 46.134021, epoch: 45.000000, eta: 0.010000
+svm: 46.907216, epoch: 30.000000, eta: 0.110000, , lamda: 0.460000
+pa: 46.649485, epoch: 20.000000
+
+*************no normalization******************
+perceptron: 45.876289, epoch: 40.000000, eta: 0.010000
+svm: 60.000000, epoch: 0.000000, eta: 0.000000, , lamda: 10.000000
+pa: 48.711340, epoch: 5.000000
+
+*************min_max_norm_data*****************
+perceptron: 47.938144, epoch: 30.000000, eta: 0.010000
+svm: 60.000000, epoch: 0.000000, eta: 0.000000, , lamda: 10.000000
+pa: 48.195876, epoch: 45.000000
+
+*************NO ONE HOT ENCODER(-1,0,1) - z_score_norm_data******************
+perceptron: 46.649485, epoch: 5.000000, eta: 0.010000
+svm: 46.134021, epoch: 50.000000, eta: 0.160000, , lamda: 0.310000
+pa: 46.134021, epoch: 20.000000
+
+*************NO ONE HOT ENCODER(-1,0,1) - min_max_norm_data******************
+perceptron: 47.680412, epoch: 45.000000, eta: 0.010000
+svm: 60.000000, epoch: 0.000000, eta: 0.000000, , lamda: 10.000000
+pa: 47.164948, epoch: 35.000000
+
+*************NO ONE HOT ENCODER(-1,0,1) - NO NORMALIZING DATA******************
+perceptron: 48.453608, epoch: 44.000000, eta: 0.010000
+svm: 60.000000, epoch: 0.000000, eta: 0.000000, , lamda: 10.000000
+pa: 51.546392, epoch: 24.000000
+
+changing the data::::::
+
+*************NO ONE HOT ENCODER(-1,0,1) - z_score_norm_data******************
+perceptron: 38.695163, epoch: 39.000000, eta: 0.010000
+svm: 38.470191, epoch: 49.000000, eta: 0.310000, , lamda: 0.410000
+pa: 36.670416, epoch: 39.000000
+
+*************NO ONE HOT ENCODER(-1,0,1) - min_max_norm_data******************
+perceptron: 41.507312, epoch: 30.000000, eta: 0.010000
+svm: 53.093363, epoch: 30.000000, eta: 0.060000, , lamda: 0.360000
+pa: 39.932508, epoch: 50.000000
+
+*************NO ONE HOT ENCODER(-1,0,1) - NO NORMALIZING DATA******************
+perceptron: 38.582677, epoch: 5.000000, eta: 0.010000
+svm: 55.680540, epoch: 20.000000, eta: 0.210000, , lamda: 0.310000
+pa: 44.544432, epoch: 5.000000
+
+*************ONE HOT ENCODER - z_score_norm_data******************
+perceptron: 40.944882, epoch: 30.000000, eta: 0.010000
+svm: 37.907762, epoch: 25.000000, eta: 0.410000, , lamda: 0.460000
+pa: 37.907762, epoch: 35.000000
+
+*************ONE HOT ENCODER - min_max_norm_data******************
+perceptron: 41.282340, epoch: 5.000000, eta: 0.010000
+svm: 53.993251, epoch: 30.000000, eta: 0.110000, , lamda: 0.260000
+pa: 43.869516, epoch: 5.000000
+
+*************ONE HOT ENCODER - NO NORMALIZING DATA******************
+perceptron: 39.932508, epoch: 5.000000, eta: 0.010000
+svm: 53.993251, epoch: 20.000000, eta: 0.160000, , lamda: 0.360000
+pa: 39.932508, epoch: 35.000000
